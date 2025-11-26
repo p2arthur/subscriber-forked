@@ -29,7 +29,7 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: Build doc
-        run: npm run script:documentation
+        run: npm run generate:code-docs
 
       - name: Upload to GitHub pages
         uses: actions/upload-pages-artifact@v3
