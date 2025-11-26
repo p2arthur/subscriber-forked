@@ -90,7 +90,7 @@ jobs:
     permissions: # <-- ADD THIS BLOCK
       id-token: write
       contents: read # Optional, but good practice if not inherited
-      write: pages
+      pages: write
     uses: ./.github/workflows/docs.yml
     secrets:
       BOT_ID: ${{ secrets.BOT_ID }}
