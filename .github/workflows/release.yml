@@ -86,7 +86,7 @@ jobs:
   generate-publish-docs:
     name: Publish docs
     needs: release
-    if: github.ref_name == 'release'
+    if: github.ref_name == 'main'
     permissions: # <-- ADD THIS BLOCK
       id-token: write
       contents: read # Optional, but good practice if not inherited
