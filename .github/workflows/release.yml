@@ -92,5 +92,5 @@ jobs:
       contents: read # Optional, but good practice if not inherited
     uses: ./.github/workflows/docs.yml
     secrets:
-      BOT_ID: ${{ secrets.BOT_ID }}
+      # BOT_ID: ${{ secrets.BOT_ID }}
       BOT_SK: ${{ secrets.BOT_SK }}

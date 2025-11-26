@@ -5,8 +5,8 @@ on:
     secrets:
       BOT_SK:
         required: true
-      BOT_ID:
-        required: true
+      # BOT_ID:
+      #   required: true
 
   workflow_dispatch:
 
