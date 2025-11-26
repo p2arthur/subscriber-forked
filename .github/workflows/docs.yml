@@ -5,6 +5,8 @@ on:
     secrets:
       BOT_SK:
         required: true
+      BOT_ID:
+        required: true
 
   workflow_dispatch:
 
@@ -37,4 +39,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
+          id: ${{ secrets.BOT_ID }}
           token: ${{ secrets.BOT_SK }}
