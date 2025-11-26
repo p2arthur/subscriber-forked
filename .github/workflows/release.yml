@@ -87,6 +87,6 @@ jobs:
     name: Publish docs
     needs: release
     if: github.ref_name == 'release'
-    uses: ./.github/workflows/gh-pages.yml
+    uses: ./.github/workflows/docs.yml
     secrets:
       BOT_SK: ${{ secrets.BOT_SK }}
