@@ -16,6 +16,7 @@ jobs:
     permissions:
       contents: read
       id-token: write
+      pages: write # <--- ADD THIS LINE
     steps:
       - name: Generate bot token
         uses: actions/create-github-app-token@v1
