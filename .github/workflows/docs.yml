@@ -2,11 +2,6 @@ name: 'Run typedoc and publish to pages'
 
 on:
   workflow_call:
-    secrets:
-      BOT_SK:
-        required: true
-      BOT_ID:
-        required: true
 
   workflow_dispatch:
 
@@ -16,7 +11,6 @@ jobs:
     permissions:
       contents: read
       id-token: write
-      pages: write # <--- ADD THIS LINE
     steps:
       - name: Generate bot token
         uses: actions/create-github-app-token@v1
